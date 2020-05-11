@@ -11,7 +11,7 @@ RUN apt-get install -y libcurl4-openssl-dev
 RUN docker-php-ext-install -j$(nproc) pdo
 RUN docker-php-ext-install -j$(nproc) pdo_mysql
 RUN docker-php-ext-install -j$(nproc) mysqli
-RUN docker-php-ext-install -j$(nproc) gd 
+RUN docker-php-ext-install -j$(nproc) gd2
 RUN docker-php-ext-install -j$(nproc) fileinfo 
 RUN docker-php-ext-install -j$(nproc) curl
 
